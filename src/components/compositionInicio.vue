@@ -5,7 +5,7 @@
       <div class="gallery-text">
         <x-sign>---- NOV.11.2021 ----</x-sign>
         <x-sign><h5>A LITTLE CURIOSITY IS THE START OF AN ENTIRE CAREER</h5></x-sign>
-        <x-sign><label> BY LUIS PULIDO xxx</label></x-sign>
+        <x-sign><label> BY LUIS PULIDO </label></x-sign>
       </div>
     </div>
   </div>

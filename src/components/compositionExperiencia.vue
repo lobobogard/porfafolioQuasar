@@ -10,23 +10,25 @@
       <h5>My projects were always web maintenance and new or maintenance application for companies so I created these two little projects as examples </h5>
     </div>
   </div>
+
   <div class="row q-mt-xl text-center justify-center">
-     <div class="col-5 bg-pink-10 rcorners-exp pointer-exp" @click="$refs.myChild.modalExperiencia('go', 0)">
+     <div class="col-5 bg-pink-10 rcorners-exp pointer-exp" @click="$refs.hijoProyectos.modalProyecto('go', 0)">
         <q-img src="~assets/iconos/go.png" spinner-color="white" fit="fill" style="height: 40px; max-width: 40px" class="img-exp" />
      </div>
-    <div class="col-5 bg-deep-orange-11 rcorners-exp pointer-exp" @click="$refs.myChild.modalExperiencia('php', 1)">
+    <div class="col-5 bg-deep-orange-11 rcorners-exp pointer-exp">
         <q-img src="~assets/iconos/php.png" spinner-color="white" fit="fill" style="height: 30px; max-width: 30px" class="img-exp q-mt-sm" />
      </div>
    </div>
+
    <div class="row justify-center q-mt-sm">
-     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp" @click="$refs.myChild.modalExperiencia('go', 0)">
+     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp pointer-exp" @click="$refs.hijoExperiencia.modalExperiencia('go', 0)">
        <div class="row" style="height: 20px">
          <div class="col">FRAMEWORK</div>
-         <div class="col"><q-img src="~assets/iconos/framework.png" spinner-color="white" fit="fill" class="img-exp" @click="$refs.myChild.modalExperiencia('php', 0)" /></div>
+         <div class="col"><q-img src="~assets/iconos/framework.png" spinner-color="white" fit="fill" class="img-exp" /></div>
          <div class="col">FIBER</div>
        </div>
      </div>
-     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp pointer-exp" @click="$refs.hijoExperiencia.modalExperiencia('php', 1)">
       <div class="row text-pink-10" style="height: 20px">
          <div class="col">FRAMEWORK</div>
          <div class="col"><q-img src="~assets/iconos/framework.png" spinner-color="white" fit="fill" class="img-exp" /></div>
@@ -35,14 +37,14 @@
      </div>
    </div>
     <div class="row justify-center q-mt-sm">
-     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp pointer-exp">
        <div class="row" style="height: 20px">
          <div class="col">ORM</div>
          <div class="col"><q-img src="~assets/iconos/framework2.png" spinner-color="white" fit="fill" class="img-exp" /></div>
          <div class="col">GORM</div>
        </div>
      </div>
-     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp pointer-exp">
       <div class="row text-pink-10" style="height: 20px">
          <div class="col">ORM</div>
          <div class="col"><q-img src="~assets/iconos/framework2.png" spinner-color="white" fit="fill" class="img-exp" /></div>
@@ -51,14 +53,14 @@
      </div>
    </div>
   <div class="row justify-center q-mt-sm">
-     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp pointer-exp">
        <div class="row" style="height: 20px">
          <div class="col">BACKEND</div>
          <div class="col"><q-img src="~assets/iconos/backend.png" spinner-color="white" fit="fill" class="img-exp" /></div>
          <div class="col">FRAMEWORK QUASAR</div>
        </div>
      </div>
-     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp pointer-exp">
       <div class="row text-pink-10" style="height: 20px">
          <div class="col">BACKEND</div>
          <div class="col"><q-img src="~assets/iconos/backend.png" spinner-color="white" fit="fill" class="img-exp" /></div>
@@ -67,14 +69,14 @@
      </div>
    </div>
    <div class="row justify-center q-mt-sm">
-     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp pointer-exp">
        <div class="row" style="height: 20px">
          <div class="col">DATABASE</div>
          <div class="col"><q-img src="~assets/iconos/database.png" spinner-color="white" fit="fill" class="img-exp" /></div>
          <div class="col">MYSQL</div>
        </div>
      </div>
-     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp pointer-exp">
       <div class="row text-pink-10" style="height: 20px">
          <div class="col">DATABASE</div>
          <div class="col"><q-img src="~assets/iconos/database.png" spinner-color="white" fit="fill" class="img-exp" /></div>
@@ -83,14 +85,14 @@
      </div>
    </div>
    <div class="row justify-center q-mt-sm">
-     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp pointer-exp">
        <div class="row" style="height: 20px">
          <div class="col">SERVER</div>
          <div class="col"><q-img src="~assets/iconos/server.png" spinner-color="white" fit="fill" class="img-exp" /></div>
          <div class="col">AMAZON WS</div>
        </div>
      </div>
-     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp pointer-exp">
       <div class="row text-pink-10" style="height: 20px">
          <div class="col">SERVER</div>
          <div class="col"><q-img src="~assets/iconos/server.png" spinner-color="white" fit="fill" class="img-exp" /></div>
@@ -99,14 +101,14 @@
      </div>
    </div>
    <div class="row justify-center q-mt-sm">
-     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp pointer-exp">
        <div class="row" style="height: 20px">
          <div class="col">CONTROL VERSION</div>
          <div class="col"><q-img src="~assets/iconos/controlVersion.png" spinner-color="white" fit="fill" class="img-exp" /></div>
          <div class="col">GITHUB</div>
        </div>
      </div>
-     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp pointer-exp">
       <div class="row text-pink-10" style="height: 20px">
          <div class="col">CONTROL VERSION</div>
          <div class="col"><q-img src="~assets/iconos/controlVersion.png" spinner-color="white" fit="fill" class="img-exp" /></div>
@@ -115,14 +117,14 @@
      </div>
    </div>
      <div class="row justify-center q-mt-sm">
-     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp pointer-exp">
        <div class="row" style="height: 20px">
          <div class="col">IDE</div>
          <div class="col"><q-img src="~assets/iconos/ide.png" spinner-color="white" fit="fill" class="img-exp" /></div>
          <div class="col">VSCODE, ATOM</div>
        </div>
      </div>
-     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp pointer-exp">
       <div class="row text-pink-10" style="height: 20px">
          <div class="col">IDE</div>
          <div class="col"><q-img src="~assets/iconos/ide.png" spinner-color="white" fit="fill" class="img-exp" /></div>
@@ -131,14 +133,14 @@
      </div>
    </div>
   <div class="row justify-center q-mt-sm">
-     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-8 text-center rcorners-exp pointer-exp">
        <div class="row" style="height: 20px">
          <div class="col">SYSTEM OPERATIVE</div>
          <div class="col"><q-img src="~assets/iconos/os.png" spinner-color="white" fit="fill" class="img-exp" /></div>
          <div class="col">LINUX UBUNTU</div>
        </div>
      </div>
-     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp">
+     <div class="col-5 text-grey-2 bg-indigo-5 text-center rcorners-exp pointer-exp">
       <div class="row text-pink-10" style="height: 20px">
          <div class="col">SYSTEM OPERATIVE</div>
          <div class="col"><q-img src="~assets/iconos/os.png" spinner-color="white" fit="fill" class="img-exp" /></div>
@@ -147,7 +149,7 @@
      </div>
    </div>
      <div class="row justify-center q-mt-sm" id="foo" >
-     <div class="col-7 bg-teal-10 text-center rcornersDownload-exp">
+     <div class="col-7 bg-teal-10 text-center rcornersDownload-exp pointer-exp">
        <div class="row" style="height: 20px">
          <div class="col text-white">DOWNLOAD</div>
          <div class="col"><q-img src="~assets/iconos/download.png" spinner-color="white" fit="fill" class="img-exp" /></div>
@@ -155,17 +157,20 @@
        </div>
      </div>
    </div>
-   <compositionModalExperiencia ref="myChild" />
+   <compositionModalExperiencia ref="hijoExperiencia" />
+   <compositionModalProyectos  ref="hijoProyectos" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import compositionModalExperiencia from 'components/modal/compositionModalExperiencia.vue'
+import compositionModalProyectos from 'components/modal/compositionModalProyectos.vue'
 
 export default defineComponent({
   components: {
-    compositionModalExperiencia
+    compositionModalExperiencia,
+    compositionModalProyectos
   },
   methods: {
 
@@ -182,7 +187,7 @@ export default defineComponent({
   cursor: pointer
 }
 
-.rcorners-exp{
+.rcorners-exp {
   border-radius: 25px 100px;
   border: 2px solid #73AD21;
   padding: 20px;
